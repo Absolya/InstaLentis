@@ -1,0 +1,257 @@
+<style>
+
+:root .InstaLentis {
+    --main-background: #272727;
+    --main-grey: #111212;
+    --grey-transparent: #1e1e1e;
+    --colors-1: #c59949;
+    --colors-2: #111212;
+    --gradient-1: #a7a7a7;
+    --gradient-2: #ab862f61;
+    --gradient-3: rgba(0,0,0,0);
+}
+
+.InstaLentis {
+  width:600px;
+  margin:auto;
+  position:relative;
+  font-family: 'Roboto';
+  font-size:12px;
+} 
+
+.alignFlex {
+    display:flex;
+    height:100px;
+}
+
+.profilpictureInsta {
+  width:100px;
+  height:100px;
+  border-radius:100%;
+  object-fit:cover;
+  background-size:cover;
+  background-position:center;
+  position:relative;
+  filter: grayscale(1);
+  transition: all 0.5s ease-out;
+  outline: 1px white solid;
+  outline-offset:-6px;
+} 
+
+.profilpictureInsta:hover {
+  filter: grayscale(0);
+  transition: all 0.5s ease-out;
+} 
+
+.maskPicture {
+    background: linear-gradient(0deg, var(--gradient-1) 0%, var(--gradient-2) 40%, var(--gradient-3) 100%);
+    width: 90%;
+    height: 84%;
+    border-radius:100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 8.5px 5%;
+    position: relative;
+  flex-direction: column;
+    justify-content: flex-end;
+  color:white;
+  text-align:right;
+}
+
+.InstaCertifie img {
+   width:25px;
+  height:25px;
+  border-radius:100%;
+  object-fit:cover;
+  background-size:cover;
+  background-position:center;
+  position:absolute;
+  z-index:10;
+  margin-left:80px;
+  margin-top:10px;
+}
+
+.PseudoInsta {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top:5px;
+  margin-left:-30px;
+  height:10px;
+}
+
+.PseudoInsta div {
+    background-color: var(--main-background);
+    margin: 2px;
+    padding: 5px;
+    border-radius: 3px;
+    color: var(--colors-1);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 450px;
+    text-align:right;
+    text-shadow: 0 0 4px #83838391;
+}
+
+.TagInsta span {
+    color:grey;
+    font-style:italic;
+    font-weight:100;
+    font-size:9px;
+    margin-right:2px;
+}
+
+.TagInsta span:after {
+  content:")"
+}
+.TagInsta span:before {
+  content:"(@"
+}
+
+.TagInsta {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top:-60px;
+  margin-left:72px;
+}
+
+.TagInsta div {
+    background-color: var(--main-grey);
+    margin: 2px;
+    padding: 4px;
+    border-radius: 3px;
+    color: var(--colors-1);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    width: 450px;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+}
+
+.BorderColor {
+  height:5px;
+  background-color:var(--colors-1);
+  width:525px;
+  margin-left:7px;
+}
+
+.Nbrfollower  {
+    background-color:var(--main-grey);
+    margin: 2px;
+    padding: 4px;
+    border-radius: 3px;
+    width: 522px;
+    min-height:10px;
+    text-align:center;
+    margin-top:5px;
+}
+
+.Nbrfollower div {
+    font-family: 'Roboto', sans-serif;
+    color: var(--colors-1);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top:3px;
+    background-color: var(--grey-transparent);
+    transition: all 0.5s ease-out;
+}
+
+.Nbrfollower div:hover {
+    color: #000;
+    transition: all 0.5s ease-out;
+}
+
+.descriptionInsta {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top:-2px;
+}
+
+.descriptionInsta div {
+    background-color:var(--main-grey);
+    margin: 2px;
+    padding: 15px;
+    border-radius: 3px;
+    color: var(--colors-1);
+    font-size: 13px;
+    font-weight:500;
+    line-height:11px;
+    width: 502px;
+    height:60px;
+    overflow:auto;
+    text-align:justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.PostInsta {
+  width:510px;
+  height:465px;
+  padding:10px 2%;
+  margin-top:10px;
+  overflow:auto;
+  background: linear-gradient(var(--main-grey), var(--main-grey)) padding-box,linear-gradient(0deg, var(--colors-1) 0%, var(--colors-1) 40%, var(--gradient-3) 100%) border-box;
+  border: 4px solid transparent;
+}
+
+.PostInsta .PicturesInsta {
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap:wrap;
+  margin-top:0px;
+  margin-left:5px;
+  width:500px;
+  align-content: flex-start;
+}
+
+.PostInsta img {
+  width:105px;
+  height:135px;
+  margin-right:10px;
+  margin-top:8px;
+  object-fit:cover;
+  object-position:center top;
+  border:5px solid #282828;
+  filter: saturate(0.6);
+  transition: all 0.5s ease-out;
+}
+
+.PostInsta img:hover {
+  filter: saturate(1.4);
+  transition: all 0.5s ease-out;
+}
+
+
+
+/* width */
+.InstaLentis ::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+/* Track */
+.InstaLentis ::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+.InstaLentis ::-webkit-scrollbar-thumb {
+  background: var(--colors-1);
+}
+
+</style>
+
+<title>instalentis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<div class="InstaLentis"><div class="alignFlex"><!--
+IMAGE DU PROFIL -  resize auto à 100*100
+--><div class="InstaCertifie"><img src="https://soft-central.net/wp-content/uploads/2021/06/icons8-instagram-verification-badge-480.png"></div><div class="profilpictureInsta" style="background-image:url(https://i.pinimg.com/564x/18/0c/fa/180cfa5ae90a8df6c6048066d6bff69d.jpg);"><div class="maskPicture"></div></div><!--
+PRENOM + NOM 
+--><div class="PseudoInsta"><div>Prénom Nom</div></div></div><!-- AGE / LOCATION --><div class="TagInsta"><div><span>nametagg</span> age + location</div></div><div class="BorderColor"></div><!-- NOMBRE FOLLOWERS --><div class="Nbrfollower"><div>000 FOLLOWERS </div> <div>000 FOLLOWING</div></div><!-- DESCRIPTION / PARTIE LIBRE --><div class="descriptionInsta"><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div></div><!-- PARTIE PHOTOS - resize auto /PAS DE LIMITE DE PHOTO, UN SCROLL EST DISPONIBLE\ --><div class="PostInsta"><div class="PicturesInsta"><img src="https://i.pinimg.com/564x/c1/1c/40/c11c402a1fd7a7b72eb03f126b424150.jpg"><img src="https://i.pinimg.com/564x/fc/89/75/fc8975a25e46cef43ca208dd91d27367.jpg"><img src="https://i.pinimg.com/564x/e1/1c/be/e11cbe627ab40a421ccada157734aa2f.jpg"><img src="https://i.pinimg.com/564x/c1/1c/40/c11c402a1fd7a7b72eb03f126b424150.jpg"><img src="https://i.pinimg.com/564x/c1/1c/40/c11c402a1fd7a7b72eb03f126b424150.jpg"><img src="https://i.pinimg.com/564x/fc/89/75/fc8975a25e46cef43ca208dd91d27367.jpg"><img src="https://i.pinimg.com/564x/e1/1c/be/e11cbe627ab40a421ccada157734aa2f.jpg"><img src="https://i.pinimg.com/564x/c1/1c/40/c11c402a1fd7a7b72eb03f126b424150.jpg"><img src="https://i.pinimg.com/564x/c1/1c/40/c11c402a1fd7a7b72eb03f126b424150.jpg"><img src="https://i.pinimg.com/564x/fc/89/75/fc8975a25e46cef43ca208dd91d27367.jpg"><img src="https://i.pinimg.com/564x/e1/1c/be/e11cbe627ab40a421ccada157734aa2f.jpg"><img src="https://i.pinimg.com/564x/c1/1c/40/c11c402a1fd7a7b72eb03f126b424150.jpg"><img src="https://i.pinimg.com/564x/c1/1c/40/c11c402a1fd7a7b72eb03f126b424150.jpg"><img src="https://i.pinimg.com/564x/fc/89/75/fc8975a25e46cef43ca208dd91d27367.jpg"><img src="https://i.pinimg.com/564x/e1/1c/be/e11cbe627ab40a421ccada157734aa2f.jpg"><img src="https://i.pinimg.com/564x/c1/1c/40/c11c402a1fd7a7b72eb03f126b424150.jpg"></div></div>
+</div>
+
